@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+        <div class="main">
+            <div class="login-wrapper">
+
+                <div data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="col-lg-6">
+                 <img src="img/777d9c6e187bfc29677c7de89aa73c5a.jpg" class="rounded-3 shadow" alt="">
+                </div>
+                <div data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" class="inputs col-lg-6 shadow">
+                 <h1 class="text-danger text-center ">Login</h1>
+                 <form id="loginForm">
+                     <div class="input-group">
+                         <label for="username">Username</label>
+                         <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                         <div class="alert alert-danger d-none" role="alert" id="nameAlert">
+                            Pleas start with caoital letter & i range (3,14) 
+                          </div>
+                     </div>
+                     <div class="input-group">
+                         <label for="password">Password</label>
+                         <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                     </div>
+                     <button type="submit" class="btn btn-outline-danger">Login</button>
+                     <p id="error-message" class="error-message"></p>
+                </div>
+            </div>
+        </div>
+        
+            
+        
+
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="script.js"></script>
+</body>
+</html>
+
